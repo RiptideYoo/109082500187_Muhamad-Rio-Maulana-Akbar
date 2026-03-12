@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 1 - ... </h1>
+# <h1 align="center">Laporan Praktikum Modul 2 - ... </h1>
 <p align="center">[Muhamad Rio Maulana Akbar] - [109082500187]</p>
 
 ## Unguided 
@@ -36,4 +36,4 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%202/output/soal1.png)
-[penjelasan]
+jadi pada pemprogaraman ini kita diminta inputan string sebanyak 3 kali, inputan pertama disimpan di variabel "satu", inputan kedua disimpan di variabel "dua" dan inputan ketiga disimpan di variabel "tiga". setelah inputan yang diminta sudah diisi maka program akan print output awal yaitu isi dari variabel satu, dua dan tiga (Output awal = satu, dua, tiga). setelah itu program akan melakukan penukaran isi variabel  (temp = satu, satu = dua, dua = tiga, dan tiga = temp) sehingga output akhir menghasilkan "Output akhir = dua tiga satu". 
