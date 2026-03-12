@@ -80,4 +80,70 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%202/output/soal2.png)
+Jadi cara kerja program di atas, pertama kita menyiapkan empat variabel string yaitu s1,
+s2, s3, s4 untuk menampung warna dan satu variabel boolean berhasil yang awalnya
+diset True. Kemudian kita masuk ke perulangan for yang akan berjalan sebanyak 5 kali
+percobaan, di mana pada setiap putaran kita diminta menginputkan empat warna
+sekaligus. Di dalam perulangan tersebut, ada kondisi if yang mengecek apakah urutan
+warna yang diinputkan tepat sama dengan merah, kuning, hijau, dan ungu. Jika
+pada salah satu percobaan urutannya salah, maka variabel berhasil akan berubah menjadi
+false dan nilai ini akan tetap tersimpan meskipun pada percobaan berikutnya urutannya
+benar. Setelah perulangan selesai melakukan 5 kali putaran, program akan berhenti dan
+mencetak status akhir dari variabel tersebut, misalnya mencetak Berhasil :true jika
+semua urutan warna tepat.
 
+## Unguided 
+
+### 3. 
+PT POS membutuhkan aplikasi perhitungan biaya kirim berdasarkan berat parsel. Maka,
+buatlah program BiayaPos untuk menghitung biaya pengiriman tersebut dengan ketentuan
+sebagai berikut!
+Dari berat parsel (dalam gram), harus dihitung total berat dalam kg dan sisanya (dalam
+gram). Biaya jasa pengiriman adalah Rp. 10.000,- per kg. Jika sisa berat tidak kurang dari 500
+gram, maka tambahan biaya kirim hanya Rp. 5,- per gram saja. Tetapi jika kurang dari 500
+gram, maka tambahan biaya akan dibebankan sebesar Rp. 15,- per gram. Sisa berat (yang
+kurang dari 1kg) digratiskan biayanya apabila total berat ternyata lebih dari 10kg.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var berat, d1, d2 int
+    var total int
+
+    fmt.Print("Berat parsel (gram): ")
+    fmt.Scan(&berat)
+
+    d1 = (berat/1000) 
+    d2 = (berat % 1000)
+    fmt.Println("detail berat: ", d1,"kg", " + ", d2,"gram")
+
+    d1 = d1 * 10000
+
+    if d2 >= 500{
+        d2 = d2 * 5
+    }else if d2 <= 500{
+        d2 = d2 * 15
+    }
+
+    fmt.Println("detail biaya: ", "Rp. ", d1, " + ", "Rp. ", d2)
+    total = d1 + d2
+    fmt.Print("total biaya: ", total)
+
+}
+```
+### Output Unguided :
+
+##### Output 
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%202/output/soal1.png)
+Jadi cara kerja program kalkulator ini awalnya kita masukin inputan berat dalam sekala
+gram contohnya 8500 atau setara 8.5 kg nah karena di soal kita diminta detail berat
+yaitu berat utama dalam kg dan sisa berat dalam gram maka untuk berat utama kita bagi
+seribu (berat/1000) dan sisa berat (berat%1000) kenapa modulus 1000?, karena untuk
+memunculkan 3 digit belakang yaitu 500, terus berat dalam satuan kg kita kali dengan
+10.000 karena biayanya 10.000 untuk 1kg kemudian untuk sisa berat kita menggunakan
+pemisalan atau if, karena jika sisa berat kurang dari 500gram biayanya 15 sedangkan
+jika lebih dari 500g biayanya cuma 5. Abis itu kita print harga berat utama dan sisa
+berat terus kita print hasil penjumlahan harga berat utama dan sisa berat.
