@@ -95,3 +95,59 @@ func main() {
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%203/output/soal1.png)
 [penjelasan]
+
+## Unguided 
+
+### 3. 
+[Lingkaran] Suatu lingkaran didefinisikan dengan koordinat titik pusat (cx, cy) dengan radius
+r. Apabila diberikan dua buah lingkaran, maka tentukan posisi sebuah titik sembarang (x, y)
+berdasarkan dua lingkaran tersebut.
+Masukan terdiri dari beberapa tiga baris. Baris pertama dan kedua adalah koordinat titik pusat
+dan radius dari lingkaran 1 dan lingkaran 2, sedangkan baris ketiga adalah koordinat titik
+sembarang. Asumsi sumbu x dan y dari semua titik dan juga radius direpresentasikan dengan
+bilangan bulat.
+Keluaran berupa string yang menyatakan posisi titik "Titik di dalam lingkaran 1 dan 2", "Titik
+di dalam lingkaran 1", "Titik di dalam lingkaran 2", atau "Titik di luar lingkaran 1 dan 2".
+#### soal3.go
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+func jarak(a, b, c, d float64)float64{
+	return math.Sqrt(math.Pow(a-c, 2) + math.Pow(b-d, 2))
+}
+func didalam(cx, cy, r, x, y float64) bool {
+	return jarak(cx, cy, x, y) <= r
+}
+func main() {
+	var cx1, cy1, r1 float64
+	var cx2, cy2, r2 float64
+	var x, y float64
+	
+	fmt.Scan(&cx1, &cy1, &r1)
+	fmt.Scan(&cx2, &cy2, &r2)
+	fmt.Scan(&x, &y)
+
+	dalam1 := didalam(cx1, cy1, r1, x, y)
+	dalam2 := didalam(cx2, cy2, r2, x, y)
+
+	if dalam1 && dalam2 {
+		fmt.Println("Titik di dalam lingkaran 1 dan 2")
+	}else if dalam1 {
+		fmt.Println("Titik di dalam lingkaran 1")
+	}else if dalam2{
+		fmt.Println("Titik di dalam lingkaran 2")
+	}else{
+		fmt.Println("titik di luar lingkaran 1 dan 2")
+	}
+}
+```
+### Output Unguided :
+
+##### Output 
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%203/output/soal3.png)
+[penjelasan]
