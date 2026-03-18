@@ -54,7 +54,7 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%203/output/soal1.png)
-[penjelasan]
+Jadi, program diatas merupakan program yang berfungsi sebagai kalkulator untuk menghitung nilai permutasi dan kombinasi dari 4 angka yang kita inputkan, nilai inputan tadi akan diproses menggunakan fungsi faktorial untuk perhitungannya. Di dalam fungsi main terdapat if-else untuk membaca angka mana yang lebihbesar pada tiap pasangan agar perhitungannya tidak salah dimana nilai n harus lebih besar atau sama dengan r, setelah sudah ditentukan pada if-else maka program akan mengeluarkan output nilai hasil permutasi dan kombinasi.
 
 ## Unguided 
 
@@ -94,7 +94,7 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%203/output/soal1.png)
-[penjelasan]
+Jadi, Program ini dibuat untuk menjalankan fungsi komposisi. Kita diminta 3 inputan yang dimasukkan ke variabel a, b, c yang kemudian diproses dengan menggunakan 3 fungsi berbeda, Fx untuk menguadratkan angka, hx untuk menambahkan angka dengan satu dan gx untuk mengurangkan angka dengan 2.Urutan eksekusinya dimulai dari fungsi paling dalam kurung menuju ke luar contohnya fogoh(x) pada fungsi ini variabel a ditambah 1, dikurang 2, lalu hasilnya dikuadratkan.
 
 ## Unguided 
 
@@ -150,4 +150,4 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%203/output/soal3.png)
-[penjelasan]
+Jadi, program ini dibuat untuk mendeteksi posisi titik di antara dua buah lingkaran yang berbeda dengan menggunakan rumus jarak matematika.Cara kerjanya pertama kita inputkan koordinat pusat dan jari-jarinya untuk dua lingkaran dan juga koordinat satu titik sembarang, nah dari fungsi jarak program ngitung berapa jauh titik tersebut dari titik pusatnya masing-masing, abis itu fungsi didalam bakal nentuin jaraknya lebih kecil atau sama dengan jari-jari lingkaran. 
