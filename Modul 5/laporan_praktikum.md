@@ -35,7 +35,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/shellyneu/103112430114_Shellyn/blob/main/modul1/output/output-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%205/output/soal1.png)
 Jadi program ini dibuat untuk nampilin deret angka Fibonacci mulai dari suku ke-0 sampai ke-n sesuai dengan angka yang kita input, di mana proses perhitungannya pakai fungsi rekursif bernama fibbonaci. Di dalam fungsi itu, ada If-else yang nentuin kalau inputnya 0 bakal balik ke 0 dan kalau 1 bakal balik ke 1, sedangkan buat angka di atas itu, program bakal manggil dirinya sendiri berkali-kali buat ngejumlahin dua angka sebelumnya (n-1 ditambah n-2). selanjutnya, di fungsi main, program bakal nge-loop dari angka 0 sampai batas n yang lo masukin tadi, lalu nyetak hasil perhitungan tiap sukunya ke samping biar ngebentuk deret yang rapi.
 
 
@@ -70,7 +70,7 @@ func bintang(n, i, j int){
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/shellyneu/103112430114_Shellyn/blob/main/modul1/output/output-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%205/output/soal2.png)
 Jadii program ini dibuat untuk nunjukin bintang bentuk segitiga siku. pertama kita diminta input angka yang bakal disimpan ke variabel n, setelah itu program bakal jalanin atau manggil func bintang. didalam func bintang terdapat if-else, if yang pertama berfungsi untuk mengecek apakah nilai i itu lebih besar dari n atau engga kalau kondisi i belum melebihi n, program bakal masuk ke pengecekan kedua untuk nentuin apakah harus nyetak bintang atau ganti baris, di mana selama nilai j masih kurang dari atau sama dengan i, program bakal nyetak karakter bintang ke samping dan manggil dirinya sendiri lagi sambil nambahin nilai j (+1). Tapi, kalau si j sudah lebih besar dari program bakal jalanin fmt.Println() buat pindah ke baris baru dan manggil kembali fungsi bintang dengan nambahin nilai i (+1) serta ngereset nilai j balik ke 1. Proses ini bakal ngulang sampai jumlah barisnya pas sesuai angka n yang kita masukin tadi, sehingga terbentuklah pola segitiga siku-siku dari bintang-bintang tersebut. (maaf yapping :v)
 
 ## Unguided 
@@ -103,5 +103,5 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/shellyneu/103112430114_Shellyn/blob/main/modul1/output/output-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%205/output/soal3.png)
 Jadi program ini dibuat untuk mencari faktor dari angka. pertama kita diminta inputan yang nantinya disimpan ke variabel n, setelah itu program bakal memanggil func faktor. Didalam func faktor terdapat if untuk pengecekan apakah nilai i lebih dari n jika iya maka program akan berhenti, selanjutnya masuk ke if yang kedua dimana nilai n akan di modulus oleh nilai i, jika sisanya 0 maka itulah faktor dari n.

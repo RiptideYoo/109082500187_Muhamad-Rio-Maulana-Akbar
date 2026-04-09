@@ -59,7 +59,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/shellyneu/103112430114_Shellyn/blob/main/modul1/output/output-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%204/output/soal1.png)
 Jadi program ini dibuat untuk mencari hasil permutasi dan kombinasi. pertama kita diminta untuk input 4 angka yaitu a, b, c, d yang dimana nantinya kita gunakan untuk mencari permutasi dari a dan c, permutasi b dan d begitupun untuk kombinasi. setelah memasukkan input program akan menjalankan func permutation yang dimana sebelum masuk ke func permutation akan diproses terlebih dahulu ke func faktorial untuk mencari nilai faktorial dari nilai masing-masing variabel (a,b,c,d). Setelah itu program akan lanjut ke func permutation untuk mencari nilai permutasinya, hasil permutasi ini akan disimpan ke variabel b1 yang nantinya akan di print untuk menunjukan nilai permutasinya, proses untuk kombinasi juga tahapannya sama seperti permutasi.
 
 ## Unguided 
@@ -124,5 +124,5 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/shellyneu/103112430114_Shellyn/blob/main/modul1/output/output-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%204/output/soal2.png)
 Jadi program ini dibuat untuk mencari siapa pemenang perlombaan coding. pertama kita diminta input nama peserta lomba dan dan waktu pengerjaan soal sebanyak 8 kali. Program ini bakal terus minta input nama peserta satu per satu sampai kita ketik "Selesai" untuk mengakhiri loop, di mana setiap nama yang masuk bakal langsung diproses lewat subprogram hitungSkor buat ngitung berapa soal yang berhasil dijawab (maksimal 8 soal) dengan syarat waktu pengerjaannya gak boleh lebih dari 300 menit. Di dalam fungsi tersebut, kita pakai pointer supaya jumlah soal dan total skornya langsung terupdate ke variabel utama, lalu program bakal ngecek: kalau peserta itu punya jumlah soal lebih banyak atau soalnya sama tapi total waktunya lebih kecil (lebih cepat), maka nama dia bakal disimpan sebagai pemenang sementara. Setelah semua data diinput, program bakal nampilin nama pemenang beserta rekor jumlah soal dan total skor yang didapat.
