@@ -1,23 +1,34 @@
 package main
-import "fmt"
-type pusat struct{
+import (
+	"fmt"
+	"math"
+)
+type titik struct{
 	x, y int
 }
 type lingkaran struct{
-	titik pusat
+	pusat titik
 	r int
+}
+func jarak(p, q titik)float64{
+	x := (p.x - q.x)*(p.x - q.x)
+	y := (p.y - q.y)*(p.y - q.y)
+	return math.Sqrt(float64(x)+float64(y))
+}
+func didalam(c lingkaran, p titik)bool{
+	return jarak(c.pusat, p) < float64(c.r)
 }
 func main() {
 	var l1, l2 lingkaran
-	var d pusat
+	var d titik
 	var Circle1, Circle2 bool
 
-	fmt.Scanln(&l1.titik.x, &l1.titik.y, &l1.r)
-	fmt.Scanln(&l2.titik.x, &l2.titik.y, &l2.r)
+	fmt.Scanln(&l1.pusat.x, &l1.pusat.y, &l1.r)
+	fmt.Scanln(&l2.pusat.x, &l2.pusat.y, &l2.r)
 	fmt.Scan(&d.x, &d.y)
 
-	Circle1 = (d.x - l1.titik.x)*(d.x - l1.titik.x) + (d.y - l1.titik.y)*(d.y - l1.titik.y) < l1.r*l2.r
-	Circle2 = (d.x - l2.titik.x)*(d.x - l2.titik.x) + (d.y - l2.titik.y)*(d.y - l2.titik.y) < l2.r*l1.r
+	Circle1 = didalam(l1, d)
+	Circle2 = didalam(l2, d)
 
 	if Circle1 && Circle2 {
 		fmt.Print("Titik di dalam lingkaran 1 dan 2")
