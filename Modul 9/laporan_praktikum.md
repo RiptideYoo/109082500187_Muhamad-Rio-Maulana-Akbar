@@ -61,7 +61,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%204/output/soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%209/output/soal1.png)
 Jadi, program ini dibuat untuk menetahui apakah titik lingkaran tersebut termasuk kedalam lingkaran 1 atau 2. cara kerja program ini yaitu pertama diminta imputan berupa titik pusat dan jari-jari dari lingkaran 1 dan 2 kemudian program akan memasukkan inputan tadi kedalam function 'didalam', didalam function tersebut akan dieksekusi apakah jarak dari kedua titik pusat lingkaran kurang dari jari-jarinya. kemudian program akan print dari hasil eksekusi function didalam jika inputan lingakaran 1 'true' maka output nya Titik di dalam lingkaran 1'. 
 
 ## Unguided 
@@ -179,7 +179,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%204/output/soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%209/output/soal2.png)
 Jadi, program ini dibuat untuk mengolah sekumpulan bilangan bulat yang disimpan array dengan ukuran tetap sebesar N elemen yang ditentukan oleh pengguna. Cara kerja program ini yaitu pertama pengguna diminta menginput jumlah elemen dan nilai-nilainya, di mana data tersebut disimpan menggunakan fungsi make agar memori yang tersedia pas sesuai kebutuhan. Setelah data tersimpan, program akan mengeksekusi perintah untuk menampilkan isi array keseluruhan, memisahkan berdasarkan indeks ganjil, genap, maupun kelipatan dari angka x yang diinput pengguna. Untuk penghapusan index, program akan mengambil potongan slice dari awal hingga sebelum indeks yang dipilih, lalu menggunakan fungsi append untuk memasukkan sisa elemennya satu per satu secara manual agar data yang dihapus tidak muncul lagi. kemudian mencari nilai rata-rata dan standar deviasi menggunakan rumus akar kuadrat dari math.Sqrt dan menghitung frekuensinya.
 
 ## Unguided 
@@ -238,7 +238,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%204/output/soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%209/output/soal3.png)
 Jadi, program ini dibuat untuk pemenang pertandingan bola antara dua klub pada setiap pertandingan . Cara kerja program ini yaitu pertama kita diminta menginput nama Klub A dan Klub B, kemudian program akan masuk ke dalam perulangan untuk meminta masukan skor hasil pertandingan secara terus-menerus. Program akan mengeksekusi logika pengecekan skor: jika skor salah satu klub lebih besar, maka nama klub pemenang tersebut dimasukkan ke dalam wadah slice menggunakan fungsi append, namun jika skornya sama, maka yang disimpan adalah keterangan "Draw". Proses input skor ini akan berhenti secara otomatis jika pengguna memasukkan angka negatif, maka program akan berhenti. Kemudian, program akan melakukan perulangan kembali menggunakan fungsi len untuk menelusuri seluruh isi slice pemenang dan menampilin daftar hasilnya secara berurutan ke layar kemudian program akan print "Pertandingan selesai".
 
 ## Unguided 
@@ -323,5 +323,5 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%204/output/soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%209/output/soal4.png)
 Jadi, program ini dibuat buat mengecek apakah sebuah kata kalau dibalik urutannya tetap sama atau disebut sebagai palindrom dengan menggunakan array bertipe rune maksimal 127 karakter. Cara kerja program ini yaitu pertama kamu diminta menginput teks karakter melalui fungsi isiArray yang akan terus berjalan sampai kamu mengetik tanda titik atau jumlahnya mencapai 127, di mana setiap karakter tersebut disimpan dalam indeks array yang urut. Setelah teks tersimpan, program mengeksekusi fungsi balikanArray yang fungsinya menukar posisi elemen dari depan ke belakang menggunakan variabel bantuan temp, lalu hasilnya ditampilkan ke layar lewat fungsi cetakArray. Terakhir, fungsi palindrom akan membandingkan susunan karakter asli dengan hasil yang sudah dibalik tersebut jika keduanya sama, maka program bakal mengembalikan nilai true.
