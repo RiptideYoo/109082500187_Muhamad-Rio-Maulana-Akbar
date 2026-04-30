@@ -50,7 +50,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%2010/output/soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/modul%2010/output/soal1.png)
 jadi, program diatas dibuat untuk mencari berat terkecil dan terbesar dari kelinci menggunakan array yang isinya sampe 1000 (geloo), cara kerjanya pertama kita diminta inputan banyaknya keclinci yang mau dicompare beratnya misal nih aku input 5 nanti program bakal minta berat kelinci sebanyak 5, setelah kita input masing-masing beratnya nanti program bakal masuk ke perulangan dari 1 sampai ke n, jika isi array kelinci[i] lebih kecil dari min maka nilai min = kelinci[i] begitu juga dengan nilai max. setelah mendapat nilai min dan max peogram bakal print output berat kelinci paling kecil dan terbesar sekian terimakasih ALLAHUAKBAR. 
 
 
@@ -109,7 +109,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%2010/output/soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/modul%2010/output/soal2.png)
 Jadi, program di atas dibuat untuk menghitung total berat ikan per wadah dan rata-ratanya menggunakan array yang ukurannya sampai 1000 (geloo), cara kerjanya pertama kita diminta input dua nilai, yaitu jumlah total ikan dan kapasitas maksimal satu wadah. Misal nih aku input 5 dan 2, berarti ada 5 ikan dan tiap wadah cuma bisa nampung 2 ikan. Setelah itu, program bakal minta kita input berat masing-masing ikan sebanyak 5 kali. Nah, pas masuk ke proses perulangan, program bakal menjumlahkan berat ikan satu-satu ke dalam wadah. Kalau jumlah ikan di wadah sudah mencapai batas (tadi kita input 2) atau ikannya sudah habis, maka total berat di wadah itu bakal disimpan ke dalam slice aka array kosong bernama wadah (asekk), terus hitungan beratnya di-reset lagi jadi nol buat wadah berikutnya. setelah semua wadah terisi, program bakal nge-print berat masing-masing wadah secara berurutan dan menghitung rata-rata berat dari semua wadah yang ada, terus hasilnya langsung dimunculin di layar. Sekian terimakasih ALLAHUAKBAR TAKBIR.
 
 ## Unguided 
@@ -178,5 +178,5 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/Modul%2010/output/soal3.png)
+![Screenshot Output Unguided 1_1](https://github.com/RiptideYoo/109082500187_Muhamad-Rio-Maulana-Akbar/blob/main/modul%2010/output/soal3.png)
 Jadi, program ini intinya buat nyari berat balita paling kecil, paling gede, sama rata-ratanya pakai array yang gedenya sampai 100 (edun!), cara kerjanya pertama kita diminta input dulu mau masukin berapa data balita, misal nih aku input 5 nanti program bakal minta kita ketik berat balita sebanyak 5 kali terus disimpen di array, nah abis itu program bakal manggil fungsi hitungMinMax buat ngebandingin satu-satu isinya kalau ada yang lebih kecil dari min atau lebih gede dari max bakal langsung ditandai, terus ada juga fungsi rerata buat ngejumlahin semua beratnya terus dibagi sama jumlah balitanya, dan terakhir program bakal langsung print output berat paling kecil, paling gede, sama rata-ratanya sekian terimakasih ALLAHUAKBAR.
